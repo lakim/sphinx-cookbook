@@ -19,7 +19,7 @@
 
 include_recipe "build-essential"
 
-sphinx_path = "/tmp/sphinx-#{node[:sphinx][:version]}-release"
+sphinx_path = "/tmp/sphinx-#{node[:sphinx][:version]}"
 sphinx_tar = "#{sphinx_path}.tar.gz"
 
 remote_file sphinx_tar do
